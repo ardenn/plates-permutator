@@ -73,7 +73,6 @@ def plate_counter(plate1, plate2):
     # For the last section i.e "L"
     position_counts.append(compare_letters(
         letters_list, max_plate[-1], min_plate[-1]))
-
     # Multiply the postion_counts values and return the result
     return functools.reduce(operator.mul, position_counts)
 
@@ -81,4 +80,5 @@ def plate_counter(plate1, plate2):
 if __name__ == "__main__":
     print(plate_counter("KCR101A", "KCR101A"))
     print(plate_counter("KBR101A", "KCR101Z"))
-    print(plate_counter("KAR101A", "KBD282D"))
+    print(plate_counter("KCR101A", "KCR101Z"))
+    print(plate_counter("KAR101A", "KDD282D"))
